@@ -1,0 +1,136 @@
+:root {
+    --color-primary: hsl(216, 12%, 8%);
+    --color-secondary: hsl(217, 12%, 63%);
+    --color-tertiary:  hsl(213, 19%, 18%);
+    --color-accent: hsl(25, 97%, 53%);
+    --color-body: hsl(216, 12%, 54%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--color-primary);
+    overflow: hidden;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: var(--color-secondary);
+}
+
+/* Block */
+
+.block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 4rem;
+}
+
+
+.block-2 .container {
+    background-color: var(--color-tertiary);
+    /* width: -webkit-fill-available   ; */
+    align-self: center;
+    padding: 2rem;
+    border-radius: 1rem ;
+    text-align: center;
+}
+
+.block-2 .rating-text {
+   display: flex;
+   margin-top: 2rem;
+   flex-direction: row;
+   justify-content: center;
+   width: -webkit-fill-available;
+}
+
+.block-2 .text-content {
+    background-color: hsl(212, 15%, 30%);
+    color: var(--color-accent);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .block-2 .container {
+        width: 350px   ;
+    }
+}
+
+/* Container */
+.container {
+    background-color: var(--color-tertiary);
+    width: -webkit-fill-available   ;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 1rem ;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        width: 350px   ;
+    }
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    order: -1;
+}
+
+.rate-btn {
+    color: var(--color-body);
+    background-color: hsl(212, 15%, 20%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.rate-btn:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+  .rate-btn:hover + .rate-btn{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+/* Button */
+
+.btn {
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: var(--color-accent);
+    color: white;
+    width: -webkit-fill-available;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: var(--color-accent);
+}
+
+
+
+
